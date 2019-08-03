@@ -1,18 +1,15 @@
-package com.spring.boot.service.theory;
+##      What is DependencyInjection 
 
-public class DependencyInjection {
 
-    /*
-
-       In large application one need to fallow some design pattern -- One such thing is Dependency Injection
-       What [is it?] and Why [need?]
-       ----------------------------------
+   **In large application one need to fallow some design pattern -- One such thing is Dependency Injection**
+       
+###What is it? and Why need?
 
        In Object oriented programming we create many Objects to achieve final result & there will be cases where One Object is dependent
        on Other Object -- Dependency Graph
 
-       Building Laptop:
-------------------------------------------
+       Building Laptop Application
+       
        public class laptop {
 
        // inside classes we create our Objects
@@ -20,11 +17,18 @@ public class DependencyInjection {
        HardDrive obj1;
        Ram obj2;
 
-        to use these objects we always invoke them by new keyword
+       Using Objects -- new keyword for making instance of any object
 
-        HitachiHD obj1 = new HitachiHd(); -- to make it loosely couple we can use abstraction or create Interface
+       HitachiHD obj1 = new HitachiHd(); -- 
+   
+   *to make objects loosely coupled we can use abstraction or Interfaces*
 
-        ---> create interface of HardDrive and extend it to any type of Hardware
+        create interface of HardDrive and extend it to any type of Hardware
+        
+        public interface HardDrive {
+          ----
+          ----
+        }
 
         HardDrive obj1 = new HitachiHd();
         HardDrive obj2 = new SamsungHd(); --> but still we are hard coding it saying I need object type of Hitachi
@@ -33,7 +37,7 @@ public class DependencyInjection {
 
         So we have -- Dependency Injection Containers [Spring Containers]
 
-        -- these containers will be creating those objects and Inject into our application class
+ **Spring containers will be creating all objects and Inject into our application class**
 
         Where to mention and how to say to inject --> we need to do some config's here
 
@@ -46,7 +50,7 @@ public class DependencyInjection {
 
         // so these objects are readily available from Spring containers when ever some one asks fro them
 
-        so how to access them in our Laptop class ---> @Autowired on top of our object
+ **How to access objects from Spring container ==> @Autowired on top of our object**
 
         @Autowired
         HardDrive obj1;
@@ -54,13 +58,3 @@ public class DependencyInjection {
         so spring boot understands that Laptop class need HardDrive object and I have a component of HardDrive in my container --> So lets connect them
 
         and this how dependency injection is achieved!
-
-
-       }
-
-
-     */
-
-
-
-}
