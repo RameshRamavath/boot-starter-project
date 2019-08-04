@@ -32,7 +32,7 @@
    2. Some configurations - means for bigger enterprise applications we need to add so many configurations
 
 
-   and here comes the need of Code more or work more on business logic implementation and less on configure -- here comes the **Spring boot**
+   and here comes the need of **Code more or work more on business logic implementation and less on configure** -- here comes the **Spring boot**
 
    **Idea of spring boot is to give us production ready applications in quick time**
 
@@ -41,19 +41,8 @@
 
    Spring boot has so many **starter projects** which helps us to create enterprise applications faster
 
-   spring-boot-starter-web
-   spring-boot-starter-jdbc
+    spring-boot-starter-web
+    spring-boot-starter-jdbc
 
-   developer don't have XML files to modify the Configurations in Spring boot -  developer can use **application.properties** file to configure our application
+   Developer don't have XML files to modify the Configurations in Spring boot -  developer can use **application.properties** file to configure our application
 
-
-
-
-
-
-
-     */
-
-
-
-}
